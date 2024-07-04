@@ -1,3 +1,4 @@
+import 'package:imei/presentation/views/notification.view.dart';
 import 'package:imei/presentation/views/register.view.dart';
 import 'package:imei/utils/preferences.dart';
 import 'package:imei/presentation/views/home.view.dart';
@@ -18,9 +19,11 @@ class AppRoutes {
     home: (_) => const HomeView(),
     login: (_) => const LoginView(),
     signIn: (_) => const RegistroView(),
+    notifications: (_) => const NotificationView(),
   };
   static get routes => _routes;
   static String get home => 'home';
   static String get signIn => 'signIn';
   static String get login => 'login';
+  static String get notifications => 'notification';
 }

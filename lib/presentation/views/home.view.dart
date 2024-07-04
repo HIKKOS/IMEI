@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:imei/config/routes/app_routes.dart';
 import 'package:imei/config/themes/themes.dart';
+import 'package:imei/utils/navigation_util.dart';
 
 const List<Map<String, dynamic>> icons = [
   {
@@ -97,7 +99,9 @@ class HomeView extends StatelessWidget {
           actions: [
             IconButton(
               icon: const Icon(Iconsax.notification),
-              onPressed: () {},
+              onPressed: () {
+                Navigation.pushNamed(routeName: AppRoutes.notifications);
+              },
             ),
           ],
           title: const Text('Hola $name'),
