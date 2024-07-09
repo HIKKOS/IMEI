@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:imei/config/routes/app_routes.dart';
 import 'package:imei/config/themes/app_colors.dart';
 import 'package:imei/utils/navigation_util.dart';
-import 'package:imei/utils/preferences.dart';
 import 'package:imei/presentation/widgets/correo_input.dart';
 import 'package:imei/presentation/widgets/password_input.dart';
 
